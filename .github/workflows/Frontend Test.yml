@@ -59,7 +59,7 @@ jobs:
           CI: ""
 
       - name: If build fail
-      # 이전 step이 실패한 경우에만 이 step을 실행시키는 syntax
+      # 이전 step이 실패한 경우에만 이 step을 실행시키는 syntax !
         if: ${{ failure() }}
         uses: actions/github-script@v6
         with:
